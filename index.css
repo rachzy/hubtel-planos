@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* DIV.PLANO */
+
+div.plano {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-radius: 1vh;
+    box-shadow: 1vh 1vh 1vh black;
+
+    width: fit-content;
+    overflow: hidden;
+}
+
+div.plano h1,h2 {
+    text-align: center;
+}
+
+div.plano h1.titulo {
+    font-size: 5em;
+}
+
+div.plano > div {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+    border-bottom: 1px #808184 solid;
+    width: 90%;
+
+    padding-block: 3vh;
+}
+
+div.plano > div.column {
+    flex-direction: column;
+}
+
+/* PLANO => CABEÇALHO */
+
+div.plano div.cabecalho {
+    width: 100%;
+    background-color: #808184;
+
+    padding-block: 3vh;
+    border-bottom: none;
+}
+
+div.plano div.cabecalho h1 {
+    color: white;
+    text-shadow: 0 0 2vh white;
+    font-size: 3em;
+}
+
+/* PLANO => VANTAGENS */
+
+div.plano div.vantagens {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: flex-start;
+}
+
+div.plano div.vantagem {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+div.plano div.vantagem img {
+    width: 3vh;
+    padding-right: 2vh;
+}
+
+div.plano div.vantagem p {
+    font-size: 1.4em;
+}
+
+/* PLANO => SERVIÇOS */
+
+div.plano div.servicos {
+    display: flex;
+    gap: 3vh;
+}
+
+div.plano div.servicos img {
+    width: 5vh;
+}
