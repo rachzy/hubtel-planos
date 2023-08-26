@@ -5,6 +5,13 @@
   margin: 0;
 }
 
+/* DIV.PLANOS WRAPPER */
+
+div.planos-wrapper {
+  display: flex;
+  gap: 2vh;
+}
+
 /* DIV.PLANO */
 
 div.plano {
@@ -53,9 +60,20 @@ div.plano > div.column {
 
 /* PLANO => CABEÇALHO */
 
+div.plano.power div.cabecalho {
+  background-color: #808184;
+}
+
+div.plano.infinity div.cabecalho {
+  background-color: #0094d1;
+}
+
+div.plano.exclusive div.cabecalho {
+  background-color: #000f4a;
+}
+
 div.plano div.cabecalho {
   width: 100%;
-  background-color: #808184;
 
   padding-block: 2vh;
   border-bottom: none;
@@ -136,15 +154,40 @@ div.plano div.icones img {
 
 /* PLANO => BOTÃO CONTRATAR */
 
+div.plano.power button {
+  color: #808184;
+  border: 1px solid #808184;
+}
+
+div.plano.power button:hover {
+  background-color: #80818454;
+}
+
+div.plano.infinity button {
+  color: #0094d1;
+  border: 1px solid #0094d1;
+}
+
+div.plano.inifinity button:hover {
+  background-color: #0094d154;
+}
+
+div.plano.exclusive button {
+  color: #000f4a;
+  border: 1px solid #000f4a;
+}
+
+div.plano.exclusive button:hover {
+  background-color: #000f4a54;
+}
+
 div.plano button {
   padding: 1vh;
 
   font-family: "Avenir Black", sans-serif;
   font-size: 1.3em;
   text-transform: uppercase;
-  color: #808184;
 
-  border: 1px solid #808184;
   border-radius: 3vh;
 
   background: none;
@@ -160,5 +203,4 @@ div.plano button {
 
 div.plano button:hover {
   transform: scale(1.05);
-  background-color: #80818454;
 }
